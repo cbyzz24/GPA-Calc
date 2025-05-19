@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainWrapper">
+        <div class="calculatorWrapper">
+            <div class="titleWrapper">
+                <h2 class="title" id="title">GPA Calculator</h2>
+            </div>
+            <div class="controlsWrapper">
+                <input type="text" class="entryField" id="entryField" placeholder="Enter Grade Value" inputmode="numeric" autofocus>
+                <button class="submitBtn" id="submitBtn" onclick="submitGrade()">Submit</button>
+            </div>
+            <div class="displayWrapper">
+                <label class="gpa" id="gpa">GPA Result</label>
+                <p class="result" id="result"></p>
+                <button class="clearBtn" id="clearBtn" onclick="clearResults()" >Clear</button>
+            </div>
+            <div class="gradesWrapper" id="gradesWrapper">
+                <label class="gradesHeader" id="gradesHeader">Grades Display</label>
+                <div class="gradeList" id="gradeList"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

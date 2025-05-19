@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: steelblue;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.mainWrapper{
+    min-width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin-top: 25px;
+    padding: 10px;
+    /* overflow: hidden; */
+}
+
+.calculatorWrapper{
+    width: 350px;
+    /* min-height: 60vh; */
+    height: 450px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: lightslategray;
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+    box-shadow: 3px 3px 6px black;
+
+}
+
+.controlsWrapper{
+    margin-top: 20px;
+    display: flex;
+    gap: 2vw;
+    padding: 10px;
+}
+
+.controlsWrapper input{
+    width: 140px;
+    font-size: 1em;
+    text-align: right;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: inset 2px 2px 4px black;
+    padding: 5px 15px 5px 0px;
+}
+
+.submitBtn{
+    font-size: 1.15em;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 4px black;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.submitBtn:hover{
+    background-color: hsl(120, 100%, 35%);
+}
+
+.displayWrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+.gpa{
+    font-size: 1.15em;
+    font-weight: bold;
+    color: hsl(240, 100%, 17%);
+}
+
+.result{
+    min-width: 30px;
+    min-height: 20px;
+    font-size: 1.50em;
+    font-weight: bold;
+    padding: 5px 30px;
+    background-color: white;
+    color: blue;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 6px black;
+    border: none;
+}
+
+.clearBtn{
+    font-size: 1.15em;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 4px black;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.clearBtn:hover{
+    background-color: hsl(0, 100%, 70%);
+}
+
+.gradesWrapper{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gradesWrapper label{
+    margin: 5px 0px;
+    font-size: 1.05em;
+    font-style: italic;
+    /* font-weight: bold; */
+    /* border-bottom: 2px solid black; */
+}
+
+.gradeList{
+    margin-top: 5px;
+    height: 225px;
+    /* width: 40vw; */
+    width: 100px;
+    overflow-y: scroll;
+    text-align: center;
+    font-size: 1.15em;
+    font-weight: 300;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 4px;
+    background-color: hsl(210, 14%, 73%);
+    /* scrollbar-color: rgba(255, 255, 255, 0.50) transparent; */
+    scrollbar-color: lightgray transparent;
+}
