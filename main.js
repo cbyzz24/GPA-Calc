@@ -29,6 +29,7 @@ function submitGrade(){
         resultEl.innerHTML = gpa.toFixed(1) + " %";
         // console.log(gpa);
         entryEl.value = "";
+        entryEl.focus();
     }
     
 }
